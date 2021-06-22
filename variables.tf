@@ -9,3 +9,26 @@ variable "secret_key" {
   type        = string
   sensitive   = true
 }
+
+variable "zone_id" {
+    description = "Zone ID for SES"
+    type = string
+}
+
+variable "ses_name"{
+    description = "record name"
+    type = string
+}
+
+variable "record_type"{
+    description = "record type"
+    type = string
+    default = "TXT"
+}
+
+variable "ses_ttl"{
+    description = "TTL"
+    type = string
+    default = "600"
+}
+
